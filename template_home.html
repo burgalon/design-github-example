@@ -1,0 +1,19 @@
+{% extends "site/base.html" %}
+{% load markup %}
+{% block head %}
+	{{ pack.css.render_html }}
+{% endblock %}
+{% block content %}
+<div id="mainCol" class="col">
+{{ dic.home.render_html|textile }}
+</div>
+{% if items %}
+<div id="secondCol" class="">
+<h2>{{ page.tags_string }}</h2>
+{% with dic.2col_catalog_class.translate as catalog_class %}
+	{% include "site/catalog.inc.html" %}
+{% endwith %}
+</div>
+{% endif %}
+<div class="clear">&nbsp;</div>
+{% endblock %}
