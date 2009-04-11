@@ -1,0 +1,4 @@
+#secondCol {
+	color:red;
+	background:yellow url({{ pack.menu_under.render }});
+}
