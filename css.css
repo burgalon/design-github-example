@@ -1,4 +1,4 @@
 #secondCol {
 	color:red;
-	background:yellow url({{ pack.menu_under.render }});
+	background:green url({{ pack.menu_under.render }});
 }
