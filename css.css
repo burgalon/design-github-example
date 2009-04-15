@@ -638,7 +638,7 @@ textarea {
 	margin-left:20px;
 }
 a#powered {
-	background:url({{ pack.wp-logo.render }} ) no-repeat;
+	background:url({{ pack.wp_logo.render }} ) no-repeat;
 	display:block;
 	width:92px;
 	height:57px;
