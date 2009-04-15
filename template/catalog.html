@@ -1,0 +1,11 @@
+{% extends pack.template_base.template %}
+{% load markup %}
+{% block content %}
+{% if items %}
+<h1>{{page.name}}</h1>
+{% with page.tags_string as catalog_class %}
+{% include "site/catalog.inc.html" %}
+{% endwith %}
+<a class="rss" href="rss.xml">RSS</a>
+{% endif %}
+{% endblock %}
