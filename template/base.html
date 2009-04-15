@@ -60,7 +60,7 @@
 			</div>
 			<div id="navigation" class="nav span-24">
 				{% block nav %}
-					{% nav_anchors nav request.META.PATH_INFO ""%}
+					{% nav_list nav request.META.PATH_INFO ""%}
 				{% endblock %}
 				<div class="fixed"/>
 			</div>
