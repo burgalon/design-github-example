@@ -1,8 +1,5 @@
 {% extends pack.template_base.template %}
 {% load markup %} 
-{% block head %}
-	{{ pack.css.render_html }}
-{% endblock %}
 {% block content %}
 <div id="main" class="span-10 prepend-1 prepend-top colborder"> 
 	{{ dic.home.render_html|textile }}
