@@ -1,2 +1,13 @@
 {% extends pack.template_base.template %}
-{% extends "site/contact.html" %}
+{% block content %}
+<h2>Contact</h2>
+{%if form%}
+<form method="post" action=".">
+<table>
+{{ form }}
+</table>
+<input type="submit" class="submit" value="Send">
+</form>
+{%endif%}
+{{message}}
+{% endblock %}
