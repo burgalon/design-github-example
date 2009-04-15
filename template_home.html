@@ -1,18 +1,16 @@
 {% extends "site/base.html" %}
 {% load markup %}
-{% block head %}
-	{{ pack.css.render_html }}
-{% endblock %}
 {% block content %}
-<div id="mainCol" class="col">
-{{ dic.home.render_html|textile }}
+<div class="span-10 prepend-1 prepend-top colborder"> 
+	{{ dic.home.render_html|textile }}
 </div>
+
 {% if items %}
-<div id="secondCol" class="test githubb">
-<h2>{{ page.tags_string }}</h2>
-{% with dic.2col_catalog_class.translate as catalog_class %}
+<div class="span-12 prepend-top last"> 
+<h2>Featured</h2>
+{% with "horizontal" as catalog_class %}
 	{% include "site/catalog.inc.html" %}
 {% endwith %}
-</div>
 {% endif %}
-<div class="clear">&nbsp;</div>
+</div> 
+{% endblock %}
