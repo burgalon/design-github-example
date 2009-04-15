@@ -1,0 +1,27 @@
+{% extends pack.template_base.template %}
+{% block title %}{{ item|capfirst }} | {{  portfolio.title }}{% endblock %}
+{% block metaDescription %}{% firstof item.sub_title item.name %}{%endblock %}
+{% block metaKeywords %}{{ item.tags }}{%endblock %}
+{% block bodyClass %}{{ block.super}} item{% endblock %}
+
+{% block content %}
+<h2>{{item.name|capfirst}}</h2>
+<table class="item">
+	<tr><td colspan="2">
+		<a href="{{next_item.url}}"><img src="{{item.render_image}}"></a>
+	</td></tr>
+	{% if item.sub_title %}
+	<tr><td>Name</td><td class="item-sub-title">{{item.sub_title}}</td></tr>
+	{% endif %}
+	{% if item.description %}
+	<tr><td>Description</td><td class="item-desc">{{item.description}}</td></tr>
+	{% endif %}
+	<tr><td>Tags</td>
+		<td class="item-tags">
+			{% for t in item.tags_list %}
+			<a href="{{portfolio.url}}tag/{{t}}/">{{t|capfirst}}</a>
+			{% endfor %}
+		</td>
+	</tr>
+</table>
+{% endblock %}
