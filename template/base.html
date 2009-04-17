@@ -73,7 +73,9 @@
 		</div>
 		<div id="footer" class="span-24">
 		{% block footer %}
-			{% nav_anchors footer_nav request.META.PATH_INFO %}
+			<div id="copyright">
+				{% nav_anchors footer_nav request.META.PATH_INFO %}
+			</div>
 		{% endblock %}
 		</div>
 	</div>
