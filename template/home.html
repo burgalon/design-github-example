@@ -2,7 +2,7 @@
 {% load markup %} 
 {% block content %}
 <div id="main" class="span-10 prepend-1 prepend-top colborder"> 
-	{{ dic.home.render_html|textile }}
+	<div class="content">{{ dic.home.render_html|textile }}</div>
 </div>
 
 {% if items %}

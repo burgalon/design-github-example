@@ -388,12 +388,12 @@ textarea {
 .post .editlinks {
 	background-position:0 -192px;
 }
-.post .content {
+.content {
 	padding:5px 0 5px 5px;
 	line-height:145%;
 	overflow:hidden;
 }
-.post .content p {
+p {
 	margin-bottom:10px;
 }
 .post .content .under {
