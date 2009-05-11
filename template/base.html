@@ -71,6 +71,14 @@
 			{% block content %}
 			{% endblock %}
 			</div>
+			<div id="sidebar">
+			{% block sidebar %}
+				<h2>Featured</h2>
+				{% with "horizontal" as catalog_class %}
+					{% include "site/catalog.inc.html" %}
+				{% endwith %}
+			{% endblock %}
+			</div>
 			<div class="fixed">&nbsp;</div>
 		</div>
 		<div id="footer" class="span-24">
