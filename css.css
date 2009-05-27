@@ -22,6 +22,11 @@ body {
 	font-family:Verdana,"BitStream vera Sans",Helvetica,Sans-serif;
 	font-size:12px;
 }
+
+body.rtl {
+	font-family: arial;	
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight:bolder;
 	letter-spacing:-0.07em;
