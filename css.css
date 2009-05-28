@@ -244,7 +244,7 @@ textarea {
 	float:left;
 	z-index:1;
 }
-#menus li a {
+.rtl #menus li a {
 	float: right;
 	margin-left: 0;
 	margin-right: -10px;
