@@ -200,6 +200,9 @@ textarea {
 	float:left;
 	padding:0 3px;
 }
+.rtl #tagline {
+	float: right;
+}
 #navigation {
 	margin:1px 0;
 }
