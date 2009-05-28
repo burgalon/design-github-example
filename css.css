@@ -176,6 +176,10 @@ textarea {
 	letter-spacing:0;
 }
 
+.rtl #title a {
+	font-family: Tahoma;
+}
+	
 /* image blog title */
 /*
 #title a {
