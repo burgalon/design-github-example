@@ -646,8 +646,7 @@ p {
 	color:#2A2A2A;
 }
 #copyright {
-	margin-top:12px;
-	margin-left:20px;
+	margin:12px 20px 0 20px;
 }
 #themeinfo {
 	margin-left:20px;
