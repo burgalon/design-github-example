@@ -84,16 +84,10 @@ blockquote, pre {
 	text-align:left;
 	margin-right:10px;
 }
-.rtl .alignleft {
-	float:right;
-}
 .alignright {
 	float:right;
 	text-align:right;
 	margin-left:10px;
-}
-.rtl .alignright {
-	float:left;
 }
 .aligncenter {
 	display: block;
@@ -103,29 +97,15 @@ blockquote, pre {
 .floatleft {
 	float:left;
 }
-.rtl .floatleft {
-	float:right;
-}
 .floatright {
 	float:right;
-}
-.rtl .floatright {
-	float:left;
 }
 .left {
 	float:left;
 	margin-right:10px;
 }
-.rtl .left {
-	float:right;
-	margin-right:10px;
-}
 .right {
 	float:right;
-	margin-left:10px;
-}
-.rtl .right {
-	float:left;
 	margin-left:10px;
 }
 .fixed, .clear {
@@ -196,10 +176,6 @@ textarea {
 	letter-spacing:0;
 }
 
-.rtl #title a {
-	font-family:Tahoma;
-}
-
 /* image blog title */
 /*
 #title a {
@@ -220,10 +196,6 @@ textarea {
 	float:left;
 	padding:0 3px;
 }
-.rtl #tagline {
-	float: right;
-}
-	
 #navigation {
 	margin:1px 0;
 }
@@ -244,12 +216,6 @@ textarea {
 	float:left;
 	z-index:1;
 }
-.rtl #menus li a {
-	float: right;
-	margin-left: 0;
-	margin-right: -10px;
-}
-	
 #menus li a:hover {
 	background-position:0 -31px;
 }
@@ -264,11 +230,6 @@ textarea {
 	margin-left:0;
 	text-indent:-999em;
 }
-.rtl #menus li a.home {
-	margin-left: 0;
-	margin-right: 0;
-}
-
 #menus li a.home:hover {
 	background-position:0 -124px;
 }
@@ -355,10 +316,6 @@ textarea {
 	padding:5px 15px 15px;
 	float:left;
 }
-.rtl #main {
-	float: right;
-}
-
 #notice {
 	color:#080;
 }
@@ -532,9 +489,6 @@ p {
 	font-size:95%;
 	line-height:145%;
 	overflow:hidden;
-}
-.rtl #sidebar {
-	float: left;
 }
 #sidebar li {
 	background:url({{ pack.img_icons.render }} ) 0 -320px no-repeat;
