@@ -264,7 +264,7 @@ textarea {
 	margin-left:0;
 	text-indent:-999em;
 }
-.#menus li a.home {
+.rtl #menus li a.home {
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -532,6 +532,9 @@ p {
 	font-size:95%;
 	line-height:145%;
 	overflow:hidden;
+}
+.rtl #sidebar {
+	float: left;
 }
 #sidebar li {
 	background:url({{ pack.img_icons.render }} ) 0 -320px no-repeat;
