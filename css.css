@@ -652,7 +652,7 @@ p {
 	margin-left:20px;
 }
 a#powered {
-	background:url({{ pack.img_wp-logo.get_file }} ) no-repeat;
+	background:url({{ pack.img_wp_logo.get_file }} ) no-repeat;
 	display:block;
 	width:92px;
 	height:57px;
