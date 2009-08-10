@@ -35,8 +35,8 @@
 		{{ pack.css.render }}
 		{{dic.css.render}}
 	{% endblock %}
-	<link rel="icon" href="/static/{{version}}/images/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="/static/{{version}}/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="{{ MEDIA_URL }}images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="{{ MEDIA_URL }}images/favicon.ico" type="image/x-icon">
 </head>
 <body class="{{body_class}}{% block bodyClass %}{{dic.pattern.translate}} {% if dic.rtl %}rtl{% endif %}{% endblock %}">
 <div id="wrap" class="container">
@@ -101,6 +101,5 @@
   <script src="/static/js/base.js" type="text/javascript"></script>
   {{dic.js.render}}
 {% endblock %}
-	
 </body>
 </html>
