@@ -3,13 +3,13 @@
 <html lang="en">
 <head> 
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<meta name="description" content="{% block metaDescription %}{{ portfolio.name }} - {{ dic.moto.translate }}{% endblock %}" />
+	<meta name="description" content="{% block metaDescription %}{{ portfolio.title }} - {{ dic.moto }}{% endblock %}" />
 	<meta name="keywords" content="{% block metaKeywords %}{{ dic.metaKeywords }}{% endblock %}" />
 
 	<title>
 	{% block title %}
 		{%if page.is_home %}
-			{{  portfolio.title }} - {{ dic.moto.translate }}
+			{{  portfolio.title }} - {{ dic.moto }}
 		{%else%} 
 			{{ page }} | {{  portfolio.title }}  
 		{%endif%}
@@ -29,16 +29,16 @@
 		{{ block.super }}
 		<style type="text/css">
 		body {
-			{% if dic.background %}background: url('{{ dic.background.render|safe}}') center 0 no-repeat ;{% endif %}
+			{% if files.background %}background: url('{{ files.background|safe}}') center 0 no-repeat ;{% endif %}
 		}
 		</style>
 		{{ pack.css.render }}
-		{{dic.css.render}}
+		{{files.css.render}}
 	{% endblock %}
 	<link rel="icon" href="{{ MEDIA_URL }}images/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="{{ MEDIA_URL }}images/favicon.ico" type="image/x-icon">
 </head>
-<body class="{{body_class}}{% block bodyClass %}{{dic.pattern.translate}} {% if dic.rtl %}rtl{% endif %}{% endblock %}">
+<body class="{{body_class}}{% block bodyClass %}{{dic.pattern}} {% if dic.rtl %}rtl{% endif %}{% endblock %}">
 <div id="wrap" class="container">
 	<div id="container">
 		<div id="header">
@@ -46,16 +46,16 @@
 				<h1 id="title" class="logo">
 				{% block logo %}
 					{%if dic.logo.mime_type %}
-					<a href="{{ portfolio.url }}" title="{{ dic.moto.translate }}">
-						{{ dic.logo.render }}
+					<a href="{{ portfolio.url }}" title="{{ dic.moto }}">
+						{{ dic. }}
 						<span class="hide">{{  portfolio.title }}</span>
 					</a>
 					{% else %}
-					<a href="{{ portfolio.url }}" title="{{ dic.moto.translate }}">{{  portfolio.title }}</a>
+					<a href="{{ portfolio.url }}" title="{{ dic.moto }}">{{  portfolio.title }}</a>
 					{% endif %}
 				{% endblock %}
 				</h1>
-				<div id="tagline">{{ dic.moto.translate }}</div>
+				<div id="tagline">{{ dic.moto }}</div>
 			</div>
 			<div id="topNav" align="right">
 			{% block topNav %}{% endblock %}
@@ -99,7 +99,7 @@
 {% block beforeBodyEnd %}
   <script src="/static/js/jquery.min.js" type="text/javascript"></script>
   <script src="/static/js/base.js" type="text/javascript"></script>
-  {{dic.js.render}}
+  {{files.js.render}}
 {% endblock %}
 </body>
 </html>

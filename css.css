@@ -17,7 +17,7 @@ abbr[title], acronym[title] {
 	cursor:help;
 }
 body {
-	background:#BEC3C6 url({{ pack.img_bg.get_file }} ) repeat-x;
+	background:#BEC3C6 url({{ pack.bg.get_file }} ) repeat-x;
 	color:#555;
 	font-family:Verdana,"BitStream vera Sans",Helvetica,Sans-serif;
 	font-size:12px;
@@ -71,7 +71,7 @@ a:hover {
 	margin:0;
 }
 blockquote, pre {
-	background:#F4F5F7 url({{ pack.img_blockquote.get_file }} ) 3px 3px no-repeat;
+	background:#F4F5F7 url({{ pack.blockquote.get_file }} ) 3px 3px no-repeat;
 	border:1px dashed #CCC;
 	padding:8px 12px 8px 36px;
 	margin:5px 0;
@@ -114,12 +114,12 @@ blockquote, pre {
 }
 input.textfield, 
 textarea {
-	background:#FFF url({{ pack.img_textfield.get_file }} ) top repeat-x;
+	background:#FFF url({{ pack.textfield.get_file }} ) top repeat-x;
 	border:1px solid #A6A6A6;
 	padding:2px 1px;
 }
 .boxcaption {
-	background:#E3E4E6 url({{ pack.img_box.get_file }} ) 0 0 no-repeat;
+	background:#E3E4E6 url({{ pack.box.get_file }} ) 0 0 no-repeat;
 	padding:6px 12px;
 	border-bottom:1px solid #CCC;
 }
@@ -129,13 +129,13 @@ textarea {
 	letter-spacing:0em;
 }
 .box {
-	background:#F4F5F7 url({{ pack.img_box.get_file }} ) 100% 100% no-repeat;
+	background:#F4F5F7 url({{ pack.box.get_file }} ) 100% 100% no-repeat;
 	padding:8px 12px;
 	margin-bottom:10px;
 }
 .messagebox, 
 .errorbox {
-	background:#EDEFF0 url({{ pack.img_messagebox.get_file }} ) no-repeat;
+	background:#EDEFF0 url({{ pack.messagebox.get_file }} ) no-repeat;
 	padding:0 12px;
 	height:27px;
 	line-height:27px;
@@ -149,7 +149,7 @@ textarea {
 
 /* layout START */
 #wrap {
-	background:url({{ pack.img_light.get_file }} ) center top no-repeat;
+	background:url({{ pack.light.get_file }} ) center top no-repeat;
 	padding:20px 0;
 }
 #container {
@@ -160,7 +160,7 @@ textarea {
 
 /* header START */
 #header {
-	background:url({{ pack.img_header_footer.get_file }} ) 0 0 no-repeat;
+	background:url({{ pack.header_footer.get_file }} ) 0 0 no-repeat;
 	height:132px;
 }
 #caption {
@@ -184,7 +184,7 @@ textarea {
 /* image blog title */
 /*
 #title a {
-	background:url({{ pack.img_title.get_file }} ) no-repeat;
+	background:url({{ pack.title.get_file }} ) no-repeat;
 	text-decoration:none;
 	color:#FFF;
 	width:250px;
@@ -212,7 +212,7 @@ textarea {
 	list-style:none;
 }
 #menus li a {
-	background:transparent url({{ pack.img_menu.get_file }} ) no-repeat;
+	background:transparent url({{ pack.menu.get_file }} ) no-repeat;
 	display:block;
 	color:#382E1F;
 	height:31px;
@@ -258,7 +258,7 @@ textarea {
 	float:right;
 }
 #searchbox .switcher {
-	background:url({{ pack.img_icons.get_file }} ) 0 0 no-repeat;
+	background:url({{ pack.icons.get_file }} ) 0 0 no-repeat;
 	float:right;
 	width:18px;
 	height:22px;
@@ -312,7 +312,7 @@ textarea {
 
 /* content START */
 #content {
-	background:#FFF url({{ pack.img_sidesep.get_file }} ) right repeat-y;
+	background:#FFF url({{ pack.sidesep.get_file }} ) right repeat-y;
 	min-height:400px;
 }
 /* content END */
@@ -360,7 +360,7 @@ textarea {
 .post .comments, 
 .post .addcomment, 
 .post .editlinks {
-	background:url({{ pack.img_icons.get_file }} ) no-repeat;
+	background:url({{ pack.icons.get_file }} ) no-repeat;
 	padding-left:22px;
 	height:16px;
 	line-height:16px;
@@ -450,13 +450,13 @@ p {
 	text-align:left;
 }
 .post .content .boxcaption {
-	background-image:url({{ pack.img_postbox.get_file }} );
+	background-image:url({{ pack.postbox.get_file }} );
 }
 .post .content .box {
-	background-image:url({{ pack.img_postbox.get_file }} );
+	background-image:url({{ pack.postbox.get_file }} );
 }
 #postpath {
-	background:url({{ pack.img_icons.get_file }} ) 0 -208px no-repeat;
+	background:url({{ pack.icons.get_file }} ) 0 -208px no-repeat;
 	height:16px;
 	line-height:16px;
 	margin:5px 0;
@@ -473,7 +473,7 @@ p {
 }
 #pagenavi .newer a, 
 #postnavi .prev a {
-	background:url({{ pack.img_icons.get_file }} ) 0 -224px no-repeat;
+	background:url({{ pack.icons.get_file }} ) 0 -224px no-repeat;
 	padding-left:22px;
 	float:left;
 	height:16px;
@@ -481,7 +481,7 @@ p {
 }
 #pagenavi .older a, 
 #postnavi .next a {
-	background:url({{ pack.img_icons.get_file }} ) 100% -240px no-repeat;
+	background:url({{ pack.icons.get_file }} ) 100% -240px no-repeat;
 	padding-right:22px;
 	float:right;
 	height:16px;
@@ -499,7 +499,7 @@ p {
 	overflow:hidden;
 }
 #sidebar li {
-	background:url({{ pack.img_icons.get_file }} ) 0 -320px no-repeat;
+	background:url({{ pack.icons.get_file }} ) 0 -320px no-repeat;
 	padding-left:22px;
 	list-style:none;
 	margin-top:5px;
@@ -510,11 +510,11 @@ p {
 	font-size:12px;
 }
 #northsidebar .widget {
-	background:url({{ pack.img_widgetsep.get_file }} ) bottom no-repeat;
+	background:url({{ pack.widgetsep.get_file }} ) bottom no-repeat;
 	padding:10px 15px 19px;
 }
 #southsidebar .widget {
-	background:url({{ pack.img_widgetsep.get_file }} ) top no-repeat;
+	background:url({{ pack.widgetsep.get_file }} ) top no-repeat;
 	padding:15px 15px 17px;
 }
 #centersidebar {
@@ -566,10 +566,10 @@ p {
 	text-decoration:none;
 }
 #sidebar #feedrss {
-	background:url({{ pack.img_feeds.get_file }} ) 5px 5px no-repeat;
+	background:url({{ pack.feeds.get_file }} ) 5px 5px no-repeat;
 }
 #sidebar #feedemail {
-	background:url({{ pack.img_feeds.get_file }} ) 5px -45px no-repeat;
+	background:url({{ pack.feeds.get_file }} ) 5px -45px no-repeat;
 	margin-left:15px;
 }
 #subscribe ul {
@@ -587,7 +587,7 @@ p {
 	display:block;
 }
 #subscribe li a span {
-	background:url({{ pack.img_readers.get_file }} ) no-repeat;
+	background:url({{ pack.readers.get_file }} ) no-repeat;
 	height:20px;
 	width:80px;
 	display:block;
@@ -634,7 +634,7 @@ p {
 
 /* footer START */
 #footer {
-	background:url({{ pack.img_header_footer.get_file }} ) 0 -132px no-repeat;
+	background:url({{ pack.header_footer.get_file }} ) 0 -132px no-repeat;
 	display:block;
 	height:88px;
 	border-top:1px solid #CCC;
@@ -652,7 +652,7 @@ p {
 	margin-left:20px;
 }
 a#powered {
-	background:url({{ pack.img_wp_logo.get_file }} ) no-repeat;
+	background:url({{ pack.wp_logo.get_file }} ) no-repeat;
 	display:block;
 	width:92px;
 	height:57px;
@@ -661,7 +661,7 @@ a#powered {
 	text-indent:-999em;
 }
 a#gotop {
-	background:url({{ pack.img_icons.get_file }} ) 0 -304px no-repeat;
+	background:url({{ pack.icons.get_file }} ) 0 -304px no-repeat;
 	float:right;
 	height:16px;
 	line-height:18px;
@@ -721,10 +721,10 @@ a#gotop {
 	margin-top:3px;
 }
 #cmtswitcher .addcomment {
-	background:url({{ pack.img_icons.get_file }} ) 0 -112px no-repeat;
+	background:url({{ pack.icons.get_file }} ) 0 -112px no-repeat;
 }
 #cmtswitcher .addtrackback {
-	background:url({{ pack.img_icons.get_file }} ) 0 -144px no-repeat;
+	background:url({{ pack.icons.get_file }} ) 0 -144px no-repeat;
 }
 #thecomments, 
 #thetrackbacks {
@@ -740,7 +740,7 @@ a#gotop {
 	text-align:center;
 }
 .comment .pic {
-	background:url({{ pack.img_commentpoint.get_file }} ) 100% 33% no-repeat;
+	background:url({{ pack.commentpoint.get_file }} ) 100% 33% no-repeat;
 	padding-right:14px;
 	margin-top:10px;
 }
@@ -755,7 +755,7 @@ a#gotop {
 	border:1px solid #999;
 }
 .comment .info {
-	background:#EDEFF0 url({{ pack.img_comment.get_file }} ) 0 0 no-repeat;
+	background:#EDEFF0 url({{ pack.comment.get_file }} ) 0 0 no-repeat;
 	float:left;
 	padding:10px 15px 0;
 	width:494px;
@@ -771,7 +771,7 @@ a#gotop {
 	font-size:10px;
 }
 .comment .content {
-	background:url({{ pack.img_comment.get_file }} ) 100% 100% no-repeat;
+	background:url({{ pack.comment.get_file }} ) 100% 100% no-repeat;
 	margin:0 -15px;
 	padding:0 15px 10px;
 	line-height:145%;
@@ -787,7 +787,7 @@ a#gotop {
 	float:right;
 }
 .admincomment .pic {
-	background:url({{ pack.img_commentpoint.get_file }} ) 0% 33% no-repeat;
+	background:url({{ pack.commentpoint.get_file }} ) 0% 33% no-repeat;
 	padding-right:0;
 	padding-left:14px;
 }
@@ -808,12 +808,12 @@ a#gotop {
 	margin-top:15px;
 }
 .trackback {
-	background:#EDEFF0 url({{ pack.img_box.get_file }} ) 0 0 no-repeat;
+	background:#EDEFF0 url({{ pack.box.get_file }} ) 0 0 no-repeat;
 	padding:10px 15px 0;
 	width:575px;
 }
 .trackback .title {
-	background:#EDEFF0 url({{ pack.img_box.get_file }} ) 100% 100% no-repeat;
+	background:#EDEFF0 url({{ pack.box.get_file }} ) 100% 100% no-repeat;
 	padding:10px 15px !important;
 	padding:0 15px 10px;
 	width:575px;
@@ -838,7 +838,7 @@ a#gotop {
 	width:601px;
 }
 #commentnavi {
-	background:#EDEFF0 url({{ pack.img_box.get_file }} ) 0 0 no-repeat;
+	background:#EDEFF0 url({{ pack.box.get_file }} ) 0 0 no-repeat;
 	padding:10px 15px;
 	font-size:11px;
 }
@@ -855,7 +855,7 @@ a#gotop {
 }
 #commentnavi span.pages {
 	padding:0 7px 0 22px;
-	background:url({{ pack.img_icons.get_file }} ) 0 -272px no-repeat;
+	background:url({{ pack.icons.get_file }} ) 0 -272px no-repeat;
 	height:16px;
 	line-height:16px;
 	float:left;
@@ -871,7 +871,7 @@ a#gotop {
 	line-height:16px;
 }
 #submitbox a.feed {
-	background:url({{ pack.img_icons.get_file }} ) 0 -256px no-repeat;
+	background:url({{ pack.icons.get_file }} ) 0 -256px no-repeat;
 	padding-left:22px;
 	height:16px;
 	line-height:16px;
@@ -911,7 +911,7 @@ a#gotop {
 	overflow:hidden;
 }
 .post .content .linkcat ul li a {
-	background:url({{ pack.img_icons.get_file }} ) 0 -160px no-repeat;
+	background:url({{ pack.icons.get_file }} ) 0 -160px no-repeat;
 	padding-left:22px;
 	height:16px;
 	line-height:16px;
@@ -965,7 +965,7 @@ a.imageswitcher_button:hover {
 	padding-bottom:10px;
 }
 #related_posts h3 {
-	background:#E3E4E6 url({{ pack.img_box.get_file }} ) 0 0 no-repeat;
+	background:#E3E4E6 url({{ pack.box.get_file }} ) 0 0 no-repeat;
 	font-size:12px;
 	padding:6px 12px;
 	font-family:Verdana,"BitStream vera Sans",Arial,Helvetica,Sans-serif;
@@ -973,7 +973,7 @@ a.imageswitcher_button:hover {
 	border-bottom:1px solid #CCC;
 }
 #related_posts ul {
-	background:#F4F5F7 url({{ pack.img_box.get_file }} ) 100% 100% no-repeat;
+	background:#F4F5F7 url({{ pack.box.get_file }} ) 100% 100% no-repeat;
 	padding:3px 12px 8px;
 }
 #related_posts ul li {
@@ -1023,11 +1023,11 @@ a.imageswitcher_button:hover {
 	width:795px;
 }
 .one-column #header {
-	background-image:url({{ pack.img_header_footer_1col.get_file }} );
+	background-image:url({{ pack.header_footer_1col.get_file }} );
 }
 .one-column .comment .info, 
 .one-column .comment .content {
-	background-image:url({{ pack.img_comment_1col.get_file }} );
+	background-image:url({{ pack.comment_1col.get_file }} );
 }
 .one-column .boxcaption, 
 .one-column .box, 
@@ -1036,15 +1036,15 @@ a.imageswitcher_button:hover {
 .one-column #commentnavi, 
 .one-column #related_posts h3, 
 .one-column #related_posts ul {
-	background-image:url({{ pack.img_box_1col.get_file }} );
+	background-image:url({{ pack.box_1col.get_file }} );
 }
 .one-column .messagebox, 
 .one-column .errorbox {
-	background-image:url({{ pack.img_messagebox_1col.get_file }} );
+	background-image:url({{ pack.messagebox_1col.get_file }} );
 }
 .one-column .post .content .boxcaption, 
 .one-column .post .content .box {
-	background-image:url({{ pack.img_postbox_1col.get_file }} );
+	background-image:url({{ pack.postbox_1col.get_file }} );
 }
 /* one-column END */
 
