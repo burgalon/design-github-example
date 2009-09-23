@@ -101,18 +101,6 @@
 				{% endif %}
 			</div> 
 			<div id="copyright">
-				<div id="footer-portfolio">
-					{% block footer_portfolio %}
-					<a href="{{ portfolio.url }}">{{ portfolio.title }}</a>
-					{% endblock %}
-				</div>
-				<div id="footer-powered">
-					Powered by <a href="http://{{ site.domain }}">{{ site.name }}</a> 
-					| <a href="{{ portfolio.get_absolute_url}}">DashBoard</a>
-					{% if last_portfolio %}
-					| Last portfolio viewed <a href="{{ last_portfolio.url }}">{{ last_portfolio.title }}</a>
-					{% endif %}
-				</div> 
 			</div>
 		{% endblock %}
 		</div>
